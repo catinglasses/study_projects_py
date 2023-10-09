@@ -71,7 +71,7 @@ def guess():
                 f'Вы справились за {steps} попыток! Оптимальное количество шагов: <= {optimal}', sep='\n')
             
             if continue_game():
-                continue
+                guess()
             else:
                 break
 
