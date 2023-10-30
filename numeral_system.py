@@ -1,18 +1,13 @@
 def convert_to_decimal(num, radix):
     cnv_num = 0
-    numeric_storage = [] 
     hex_storage = {'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15}
 
     for char in num:
         if char in hex_storage:
             char_num = hex_storage[char]
-            numeric_storage.append(char_num)
         else:
-            numeric_storage.append(int(char))
-
-    rvrs = list(reversed(numeric_storage))
-    for i in range(len(num)):
-        cnv_num += rvrs[i] * radix ** i
+            char_num = int(char)
+        cnv_num = cnv_num * radix + char_num
 
     return cnv_num
 
