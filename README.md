@@ -7,3 +7,5 @@ Global commit history:
 - 14/10/2023 - uploaded a password generator. It's configurable: you can specify how many passwords you need to generate, their length, their contents (digits, upper- and lowercase letters, special symbols, etc). TO-ADD: make sure that each type of symbols is used at least once, so that generated passwords are more secure.
 
 - 23/10/2023 - uploaded a caesar ciphering algorithm. First it requests specifications on what you want to do: to cipher or to decipher; use russian alphabet or english; do you have a key for deciphering it. Does not cipher special symbols (!@#$% etc.) and digits. Can decipher text with no information about a key, however, algorithm requires manual confirmation that output can be read. TO-ADD: merge alphabets, cipher digits and special numbers, optimize no-key deciphering process smh.
+
+- 30/10/2023 - uploaded a number converter into other numeral systems. Supports convertion with all possible radixes at the present moment (in future will be limited to 2, 8, 10, 16). TODO: make fool-proof, limit possible radixes, optimize whether possible.
