@@ -36,10 +36,12 @@ def convert_dif_numsys(num, radix0, radix1):
             return convert_from_decimal (decimal, radix1)
 
 amount = int(input('Введите сколько чисел Вы хотите перевести в иную систему счисления:  '))
+print('-'*35)
 
 for i in range(amount):
     num = input('Укажите ЧИСЛО, которое Вы хотите перевести в другую систему счисления:  ')
     radix0 = int(input('Укажите ОСНОВАНИЕ системы счисления введеного Вами РАНЕЕ числа:  '))
     radix1 = int(input('Укажите ОСНОВАНИЕ системы счисления, в которую Вы хотите ПЕРЕВЕСТИ число:  '))
 
-    print(f'Число {num} в системе счисления {radix0} - это {convert_dif_numsys(num, radix0, radix1)} в системе счисления {radix1}.', '\n')
+    print('\n', \
+        f'Число {num} в системе счисления {radix0} - это {convert_dif_numsys(num, radix0, radix1)} в системе счисления {radix1}.', '\n')
