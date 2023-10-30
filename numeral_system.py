@@ -13,9 +13,15 @@ def convert_to_decimal(num, radix):
 
 def convert_from_decimal(num, radix):
     cnv_num = ''
+    hex_storage = {10: 'A', 11: 'B', 12: 'C', 13: 'D', 14: 'E', 15: 'F'}
+    
     while int(num) != 0:
-        cnv_num += str(int(num) % radix)
-        num = int(num) // radix
+            if int(num) % radix >= 10:
+                char_num = hex_storage[int(num) % radix]
+            else:
+                char_num = int(num) % radix
+            cnv_num += str(char_num)
+            num = int(num) // radix
 
     return cnv_num[::-1]
 
